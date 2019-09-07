@@ -38,6 +38,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
       <span class="span1">Progress: </span>
       <span class="span2">20%</span>
+      <input type="radio" class="radio" name="progress" value="five" id="five">
+      <label for="five" class="label"></label>
+
+      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
+      <label for="twentyfive" class="label">25%</label>
+
+      <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+      <label for="fifty" class="label">50%</label>
+
+      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
+      <label for="seventyfive" class="label">75%</label>
+
+      <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+      <label for="onehundred" class="label">100%</label>
   </div>
 </div>
 
@@ -150,6 +164,24 @@ function myFunction() {
   float: right;
 }
 
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
 </style>
 
 </body>
