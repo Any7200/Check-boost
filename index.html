@@ -44,20 +44,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   
 </div>
 <div align="center">
-          <input type="radio" class="radio" name="progress" value="five" id="five">
-      <label for="five" class="label">1. Formularios</label>
+      <input type="radio" class="radio" name="progress" value="1" id="1" onchange="func()">
+      <label for="1" class="label">1. Formularios</label>
 
-      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
-      <label for="twentyfive" class="label">2. Documentos de identificación</label>
+      <input type="radio" class="radio" name="progress" value="2" id="2" onchange="func()">
+      <label for="2" class="label">2. Documentos de identificación</label>
 
-      <input type="radio" class="radio" name="progress" value="fifty" id="fifty" onclick="func()">
-      <label for="fifty" class="label">3. Foto copias</label>
+      <input type="radio" class="radio" name="progress" value="3" id="3" onchange="func()">
+      <label for="3" class="label">3. Foto copias</label>
 
-      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
-      <label for="seventyfive" class="label">4. Documentación financiera</label>
+      <input type="radio" class="radio" name="progress" value="4" id="4" onchange="func()">
+      <label for="4" class="label">4. Documentación financiera</label>
 
   </div>
-  <div id="coso" class="">
+  <div id="coso" align="center">
     <div>acapulo weeeeeee</div>
   </div>
 <!-- Second Grid -->
@@ -105,7 +105,23 @@ function myFunction() {
 }
 
 function func(){
-  
+  var x = document.getElementById("1").checked;
+  var x2 = document.getElementById("2").checked;
+  var x3 = document.getElementById("3").checked;
+  var x4 = document.getElementById("4").checked;
+  var div = document.getElementById("coso");
+  if(x){
+    div.innerHTML += "<a href="">Solicitud de crédito</a><br><a href="">Formato de consulta de buró</a>";
+  }
+  else if(x2){
+    div.innerHTML += "<a href="">Comprobante de Domicilio de antigüedad</a><br><a href=""></a><br><a href=""></a>";
+  }
+  else if(x3){
+    div.innerHTML += "<a href="">Escritura Constitutiva con datos</a><br><a href="">Modificaciones a la escritura constitutiva</a><br><a href="">Poderes actuales con datos de registro</a>";
+  }
+  else if(x4){
+    div.innerHTML += "<a href="">Parciales, Julio 2019</a><br><a href="">Anuales 2018</a><br><a href="">Anuales 2017</a><br><a href="">Anuales 2016</a>";
+  }
 }
 </script>
 
