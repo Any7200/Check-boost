@@ -69,22 +69,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 <div align="center">
   <table>
-    <button value="1" id="1" onclick="func(1)">
+    <button value="1" id="1" onclick="f1()">
       1. Formularios
     </button>
-    <button value="2" id="2" onclick="func(2)">
+    <button value="2" id="2" onclick="f2()">
       2. Documentos de identificación
     </button>
-    <button value="3" id="3" onclick="func(3)">
+    <button value="3" id="3" onclick="f3()">
       3. Foto copias
     </button>
-    <button value="4" id="4" onclick="func(4)">
+    <button value="4" id="4" onclick="f4()">
       4. Documentación financiera
     </button>
   </table>
 
   </div>
-  <div id="coso" align="center">
+  <div align="center">
+    <div id="coso">
+    </div>
   </div>
   <br>
   <br>
@@ -123,6 +125,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
+var div = document.getElementById("coso");
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
@@ -133,25 +136,25 @@ function myFunction() {
   }
 }
 
-function func(x){
-  var div = document.getElementById("coso");
-
-  if(x=1){
-    div.innerHTML = "<p><a href=''>Solicitud de crédito</a></p><a href=''>Formato de consulta de buró</a>";
-  }
-  if(x=2){
-    div.innerHTML = "<a href=''>Comprobante de Domicilio de antigüedad</a><br><a href=''></a><br><a href=''></a>";
-  }
-  if(x=3){
-    div.innerHTML = "<a href=''>Escritura Constitutiva con datos</a><br><a href=''>Modificaciones a la escritura constitutiva</a><br><a href=''>Poderes actuales con datos de registro</a>";
-  }
-  if(x=4){
-    div.innerHTML = "<a href=''>Parciales, Julio 2019</a><br><a href=''>Anuales 2018</a><br><a href=''>Anuales 2017</a><br><a href=''>Anuales 2016</a>";
-  }
+function f1(){
+  div.innerHTML = "<br><a href='' class='text'>Solicitud de crédito</a><br><a href=''>Formato de consulta de buró</a>";
+}
+function f2(){
+  div.innerHTML = "<br><a href=''>Comprobante de Domicilio de antigüedad</a><br><a href=''></a><br><a href=''></a>";
+}
+function f3(){
+  div.innerHTML = "<br><a href=''>Escritura Constitutiva con datos</a><br><a href=''>Modificaciones a la escritura constitutiva</a><br><a href=''>Poderes actuales con datos de registro</a>";
+}
+function f4(){
+  div.innerHTML = "<br><a href=''>Parciales, Julio 2019</a><br><a href=''>Anuales 2018</a><br><a href=''>Anuales 2017</a><br><a href=''>Anuales 2016</a>";
 }
 </script>
 
 <style type="text/css">
+.text{
+  text-align: left;
+  font-family: Times, Times New Roman, serif;
+}
 
 .container {
   margin: 60px auto;
