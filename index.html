@@ -6,28 +6,53 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Lobster", sans-serif}
+.w3-bar,h1,button {font-family: "Quicksand"}
 .fa-anchor,.fa-coffee {font-size:200px}
+.button {
+  position: inline-block;
+  background-color: #ff6021;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 10px 100px;
+  width: 600px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button:active {
+  background-color: #ffbc21;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 </style>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://www.mifel.com.mx/" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Home</a>
+    <a href="https://www.mifel.com.mx/" class="w3-bar-item w3-button w3-padding-large w3-light-grey">Regresar a Banca Mifel</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+<header class="w3-container w3-blue w3-center" style="padding:60px 12px">
 
-  <h1 class="w3-margin w3-jumbo" style="text-shadow:1px 1px 0 #444">C h e c k - b o o s t</h1>
-  <p class="w3-xlarge">Auxiliar por exelencia en el proceso de documentación para el crédito con Mifel. <br> Mediante el uso de esta plataforma la experiencia seguirá siendo igual de rápida y eficaz. <br> ¡Bienvenido! </p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Comenzar</button>
+  <h1 class="w3-margin w3-text-amber w3-jumbo">C h e c k - b o o s t</h1>
+  <p class="w3-xlarge">Auxiliar por excelencia en el proceso de documentación para el trámite de solicitudes de crédito con Banca Mifel, todo desde la comodidad de tu casa <br> <br> El mejor aliado de tu empresa <br> <br> </p>
+  <button class="button">¡Inicia tu trámite ahora!</button>
 </header>
 
 <!-- First Grid -->
@@ -37,8 +62,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="progress">
         <div class="progress-bar"></div>
       </div>
-
-      <span class="span1">Progress: </span>
+      <span class="span1">Progreso: </span>
       <span class="span2">20%</span>
   </div>
   
@@ -69,7 +93,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <div class="progress">
           <div class="progress-bar"></div>
         </div>
-        <span class="span1">Progress: </span>
+        <span class="span1">Progreso: </span>
         <span class="span2">20%</span>
       </div>
     </div>
