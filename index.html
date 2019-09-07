@@ -68,7 +68,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   
 </div>
 <div align="center">
-      <input type="radio" class="radio" name="progress" value="1" id="1" onclick="func()">
+      <input type="radio" class="radio" name="progress" value="1" id="1" onclick="if(this.checked){func()}">
       <label for="1" class="label">1. Formularios</label>
 
       <input type="radio" class="radio" name="progress" value="2" id="2" onclick="func()">
@@ -129,27 +129,24 @@ function myFunction() {
 }
 
 function func(){
-  var x = document.getElementById("1").value;
+  var x = document.getElementById("1").checked;
   var x2 = document.getElementById("2").checked;
   var x3 = document.getElementById("3").checked;
   var x4 = document.getElementById("4").checked;
   var div = document.getElementById("coso");
 
-  
-  div.innerHTML += "Holaaaaaa";
 
   if(x){
-    div.innerHTML += "Holaaaaaa";
-    div.innerHTML += "<p><a href="">Solicitud de crédito</a></p><br><a href="">Formato de consulta de buró</a>";
+    div.innerHTML = "<p><a href=''>Solicitud de crédito</a></p><br><a href=''>Formato de consulta de buró</a>";
   }
   else if(x2){
-    div.innerHTML += "<a href="">Comprobante de Domicilio de antigüedad</a><br><a href=""></a><br><a href=""></a>";
+    div.innerHTML = "<a href=''>Comprobante de Domicilio de antigüedad</a><br><a href=''></a><br><a href=''></a>";
   }
   else if(x3){
-    div.innerHTML += "<a href="">Escritura Constitutiva con datos</a><br><a href="">Modificaciones a la escritura constitutiva</a><br><a href="">Poderes actuales con datos de registro</a>";
+    div.innerHTML = "<a href=''>Escritura Constitutiva con datos</a><br><a href=''>Modificaciones a la escritura constitutiva</a><br><a href=''>Poderes actuales con datos de registro</a>";
   }
   else if(x4){
-    div.innerHTML += "<a href="">Parciales, Julio 2019</a><br><a href="">Anuales 2018</a><br><a href="">Anuales 2017</a><br><a href="">Anuales 2016</a>";
+    div.innerHTML = "<a href=''>Parciales, Julio 2019</a><br><a href=''>Anuales 2018</a><br><a href=''>Anuales 2017</a><br><a href=''>Anuales 2016</a>";
   }
 }
 </script>
