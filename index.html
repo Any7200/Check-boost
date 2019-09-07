@@ -89,6 +89,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   
 
 <script>
+  window.onload = function(){
+    var x = getCookie("first"); 
+    if(x==true){
+      window.open("index2.html")
+    }else{
+      document.cookie = "first=true;";   
+      alert("entro");
+    }
+    
+  }
+  function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 var div = document.getElementById("coso");
 
 function f1(){
