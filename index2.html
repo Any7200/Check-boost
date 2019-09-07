@@ -123,6 +123,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
  
 </footer>
 <script>
+  function show(){
+    alert("El documento será revisado");
+    document.getElementById("subir").className="buttons buttons1";
+
+  }
 var div = document.getElementById("coso");
 
 function f1(){
@@ -227,9 +232,41 @@ function f4(){
   color: white;
   background: rgba(0, 0, 0, 0.25);
 }
+.buttons {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttons3 {
+  background-color: #4CAF50;
+  color: white;
+}
+.buttons1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
 
+.buttons1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
  
 </style>
-
+<form enctype="multipart/form-data" id="formuploadajax" method="post">
+        
+        <input  class="buttons buttons3" type="file" id="archivo1" name="archivo1"/>
+        <br />
+        <input id="subir" type="submit" onclick="show()" value="Subir archivos"/>
+    </form>
 </body>
 </html>
