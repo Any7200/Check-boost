@@ -61,34 +61,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
+  <div class="w3-content w3-center">
+    <div class="w3-center">
       <h1>Lorem Ipsum</h1>
-      <div class="container">
-        <input type="radio" class="radio" name="progress" value="five" id="five">
-        <label for="five" class="label">5%</label>
-
-        <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
-        <label for="twentyfive" class="label">25%</label>
-
-        <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
-        <label for="fifty" class="label">50%</label>
-
-        <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
-        <label for="seventyfive" class="label">75%</label>
-
-        <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
-        <label for="onehundred" class="label">100%</label>
-
+      <div class="container">        
         <div class="progress">
           <div class="progress-bar"></div>
         </div>
+        <span class="span1">Progress: </span>
+        <span class="span2">20%</span>
       </div>
-
+      
     </div>
   </div>
 </div>
@@ -120,10 +103,13 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+
 </script>
 
 <style type="text/css">
-  .container {
+
+.container {
   margin: 60px auto;
   width: 400px;
   text-align: center;
@@ -144,6 +130,8 @@ function myFunction() {
 
 .progress-bar {
   height: 16px;
+  width: 20%;
+  background-color: #f27011;
   border-radius: 4px;
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -161,56 +149,26 @@ function myFunction() {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
-/*
- * Note: using adjacent or general sibling selectors combined with
- *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
- *       See this article for more info and a potential fix:
- *       https://css-tricks.com/webkit-sibling-bug/
- */
-
-#five:checked ~ .progress > .progress-bar {
-  width: 5%;
-  background-color: #f63a0f;
-}
-
-#twentyfive:checked ~ .progress > .progress-bar {
-  width: 25%;
-  background-color: #f27011;
-}
-
-#fifty:checked ~ .progress > .progress-bar {
-  width: 50%;
-  background-color: #f2b01e;
-}
-
-#seventyfive:checked ~ .progress > .progress-bar {
-  width: 75%;
-  background-color: #f2d31b;
-}
-
-#onehundred:checked ~ .progress > .progress-bar {
-  width: 100%;
-  background-color: #86e01e;
-}
-
-.radio {
-  display: none;
-}
-
-.label {
+.span1 {
   display: inline-block;
-  margin: 0 5px 20px;
-  padding: 3px 8px;
-  color: #aaa;
-  text-shadow: 0 1px black;
-  border-radius: 3px;
-  cursor: pointer;
+  color: #4F9CC0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.7rem;
+  float: left;
 }
 
-.radio:checked + .label {
-  color: white;
-  background: rgba(0, 0, 0, 0.25);
+.span2 {
+  display: inline-block;
+  color: #4F9CC0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.7rem;
+  float: right;
 }
+
 </style>
 
 </body>
