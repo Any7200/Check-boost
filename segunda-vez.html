@@ -105,36 +105,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <br>
   <br>
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content w3-center">
-    <div class="w3-center">
-      <h1>Fases</h1>
-      <div class="container">
-        <p style="text-align: left; ">Dictamen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trámite aceptado</p>
-        <div class="progress">
-          <div class="progress-bar2"></div>
-        </div>
-        <span class="span1">Progreso: </span>
-        <span class="span2">10%</span>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <h1 align="left">Fases</h1>    
+      <div class="progress">
+        <div class="progress-bar2"></div>
+      </div>
+      <span class="span1">Progreso: </span>
+      <span class="span2">10%</span>
+    </div>
+    <br>
+    <table>
+      <button class="button1 button2" value="5" id="5" onclick="f5()">
+        Dictamen
+      </button>
+      <button class="button1 button2" value="6" id="6" onclick="f6()">
+        Análisis de Riesgos
+      </button>
+    </table>
+    <div>
+    <div align="center">
+      <div id="coso2">
+      </div>
       </div>
     </div>
   </div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Tu préstamo jamás había sido tan rápido <br> Check-boost </h1>
 </div>
 
-
-<!-- Footer -->
-<footer class="w3-container w3-black w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
-</footer>
 <script>
 var div = document.getElementById("coso");
+var div2 = document.getElementById("coso2");
 
 function f1(){
   div.innerHTML = "<br><a href='' class='text'>Solicitud de crédito <font color='#99ff33'> &#9745;</font> </a><br><a href='' class='text'>Formato de consulta de buró &#9746;</a>";
@@ -147,6 +149,12 @@ function f3(){
 }
 function f4(){
   div.innerHTML = "<br><a href='' class='text'>Parciales, Julio 2019 &#9746;</a><br><a href='' class='text'>Anuales 2018 &#9746;</a><br><a href='' class='text'>Anuales 2017 &#9746;</a><br><a href='' class='text'>Anuales 2016 &#9746;</a>";
+}
+function f5(){
+  div2.innerHTML = "<br><a href='' class='text'>En proceso &#9746;</a>";
+}
+function f6(){
+  div2.innerHTML = "<br><a href='' class='text'>En proceso &#9746;</a>";
 }
 
 </script>
