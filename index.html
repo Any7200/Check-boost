@@ -13,6 +13,30 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Quicksand"}
 .fa-anchor,.fa-coffee {font-size:200px}
+*{padding:0;margin:0;}
+
+body{
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:18px;
+  background-color:#CCC;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#ff0;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+  margin-top:22px;
+}
 .button {
   position: inline-block;
   background-color: #ff6021;
@@ -38,7 +62,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 }
 </style>
 <body>
-
+<a href="#" class="float">
+<i class="fa fa-question-circle my-float"></i>
+</a>
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-green w3-card w3-left-align w3-large">
