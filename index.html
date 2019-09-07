@@ -44,16 +44,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   
 </div>
 <div align="center">
-      <input type="radio" class="radio" name="progress" value="1" id="1" onchange="func()">
+      <input type="radio" class="radio" name="progress" value="1" id="1" onclick="func()">
       <label for="1" class="label">1. Formularios</label>
 
-      <input type="radio" class="radio" name="progress" value="2" id="2" onchange="func()">
+      <input type="radio" class="radio" name="progress" value="2" id="2" onclick="func()">
       <label for="2" class="label">2. Documentos de identificación</label>
 
-      <input type="radio" class="radio" name="progress" value="3" id="3" onchange="func()">
+      <input type="radio" class="radio" name="progress" value="3" id="3" onclick="func()">
       <label for="3" class="label">3. Foto copias</label>
 
-      <input type="radio" class="radio" name="progress" value="4" id="4" onchange="func()">
+      <input type="radio" class="radio" name="progress" value="4" id="4" onclick="func()">
       <label for="4" class="label">4. Documentación financiera</label>
 
   </div>
@@ -105,13 +105,18 @@ function myFunction() {
 }
 
 function func(){
-  var x = document.getElementById("1").checked;
+  var x = document.getElementById("1").value;
   var x2 = document.getElementById("2").checked;
   var x3 = document.getElementById("3").checked;
   var x4 = document.getElementById("4").checked;
   var div = document.getElementById("coso");
+
+  
+  div.innerHTML += "Holaaaaaa";
+
   if(x){
-    div.innerHTML += "<a href="">Solicitud de crédito</a><br><a href="">Formato de consulta de buró</a>";
+    div.innerHTML += "Holaaaaaa";
+    div.innerHTML += "<p><a href="">Solicitud de crédito</a></p><br><a href="">Formato de consulta de buró</a>";
   }
   else if(x2){
     div.innerHTML += "<a href="">Comprobante de Domicilio de antigüedad</a><br><a href=""></a><br><a href=""></a>";
